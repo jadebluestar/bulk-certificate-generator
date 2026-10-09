@@ -1,0 +1,61 @@
+# ---- Python ----
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+dist/
+*.egg-info/
+.eggs/
+pip-wheel-metadata/
+
+# ---- Virtual environments ----
+.venv/
+venv/
+env/
+ENV/
+.venv*/
+ass/                 # <-- your venv folder is literally named "ass"
+
+# ---- Environment / secrets ----
+.env
+.env.*
+!.env.example
+
+# ---- Test / coverage ----
+.pytest_cache/
+.coverage
+.coverage.*
+htmlcov/
+.tox/
+.nox/
+
+# ---- Editors / OS ----
+.vscode/
+.idea/
+*.swp
+*.swo
+.DS_Store
+Thumbs.db
+
+# ---- Project runtime artifacts ----
+# SQLite DB (regenerated on first run)
+*.db
+*.sqlite
+*.sqlite3
+
+# Generated certificates
+output/
+*.png.tmp
+
+# Trained ML model (regenerated lazily, ~2s)
+models/*.joblib
+models/*.pkl
+
+# Local payloads you created for testing
+payload.json
+*.local.json
+
+# Logs
+*.log
